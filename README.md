@@ -1,5 +1,5 @@
 # Freesurfer-Note
-## **recon-all Parallel** from *[Andy's Brain Book](https://andysbrainbook.readthedocs.io/en/latest/FreeSurfer/FS_ShortCourse/FS_04_ReconAllParallel.html)*
+## **1. recon-all Parallel** from *[Andy's Brain Book](https://andysbrainbook.readthedocs.io/en/latest/FreeSurfer/FS_ShortCourse/FS_04_ReconAllParallel.html)*
 ```
 # mac os:
 brew install parallel
