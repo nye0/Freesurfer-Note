@@ -1,0 +1,15 @@
+连接矩阵均为行到列
+gca.txt：signed-path granger coefficient
+zgca.txt：对gca.txt进行z分数的转换
+pgca.txt：z分数转换成显著性的p值
+pfdrgca.txt：对pgca.txt进行fdr校正
+siggca.txt：fdr校正后p<代码中设置的thresh变量后显著的连边保留GC值，p>thresh的置零
+siggca.txt可用于可视化显著连边
+
+sig_indegree.txt：基于siggca.txt计算的入度
+sig_outdegree.txt：基于siggca.txt计算的出度
+即文章中的weighted degree
+
+sig_indegree_bin.txt：基于二值化的siggca.txt计算的入度
+sig_outdegree_bin.txt：基于二值化的siggca.txt计算的出度
+即文章中的binary degree

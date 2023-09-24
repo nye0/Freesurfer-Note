@@ -1,0 +1,23 @@
+recon-all结果文件:
+
+mri文件夹： 存放原始结构像、剥脑壳后的图像、分割的结果
+	orig.mgz：原始结构像文件
+	T1.mgz:强度校正后的文件
+	brainmask.mgz:剥头皮后的文件
+	wm.mgz:白质
+	filled.mgz:白质填充洞之后的文件，区分了左右脑
+	aseg.mgz:皮层下结构分割的文件
+	aparc.mgz:大脑皮层的脑区划分的文件
+        aparc+aseg.mgz：合并了以上两个分割结果，提供了一个完整的大脑结构的分割
+
+Label文件夹： 存放分区信息 （.annot 图谱文件）(.label 单个脑区文件）
+
+scripts文件夹：存放的是freesurfer运行信息。
+	      recon-all.log : 记录了freesurfer所有步骤的运行信息，确保最后一行是without error，如果发生报错，可根据此文件排查错误信息。
+
+stats文件夹：存放的是描述性的统计信息。即基于图谱自动提取的指标数据。后缀名为.stats的文件，可以直接用txt打开。
+            （比如：根据模板计算的各脑区的灰质体积值(aseg.stats)，皮层厚度值(lh.aparc.a2009s.stats、lh.aparc.stats）。
+                           
+surf文件夹： 存放的是表面(surface)文件
+            非指标表面：如pial  inflated
+            指标表面：如thickness  curv  lgi
